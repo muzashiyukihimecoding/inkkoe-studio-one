@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./assets/main.css";
 import "./assets/global.css";
+import "./assets/resp-disp.css";
 
 createRoot(document.getElementById("root")).render(
    <StrictMode>

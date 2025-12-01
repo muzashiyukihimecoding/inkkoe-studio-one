@@ -62,4 +62,19 @@
       flex-wrap: wrap;
       justify-content: center;
    }
+
+   .category-filter {
+      padding: 6px 12px;
+      /* font-weight: 300; */
+      font-size: 1.25rem;
+   }
+   .sort-controls {
+      margin-left: auto;
+      label {
+         font-size: 1.25rem;
+      }
+      .sort-select {
+         font-size: 1.25rem;
+      }
+   }
 }

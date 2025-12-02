@@ -15,7 +15,9 @@ export default function ProductShowroom() {
    const filteredProducts =
       activeCategory === "all"
          ? products
-         : products.filter((product) => product.category === activeCategory);
+         : products.filter((product) =>
+              product.category.includes(activeCategory)
+           );
 
    // Sort produk
    const sortedProducts = [...filteredProducts].sort((a, b) => {

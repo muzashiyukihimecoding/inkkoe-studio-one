@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 import CategoryDropdown from "../CategoryDropdown";
 
 const navItems = [
@@ -9,7 +11,18 @@ const navItems = [
    { path: "/notif", label: "Notif" },
    { path: "/marketkoe", label: "MarketKoe" },
    { path: "/profile", label: "Profile" },
+   { path: "/login", label: "Login" },
+   { path: "/signup", label: "Sign Up" },
 ];
+
+// Login Auth
+// const { user, logout } = useAuth();
+// const navigate = useNavigate();
+
+// const handleLogout = () => {
+//    logout();
+//    navigate("/");
+// };
 
 export default function Header() {
    return (
@@ -25,11 +38,11 @@ export default function Header() {
             </a>
          </div>
 
+         <CategoryDropdown />
          {/* <span className="hd-category">Category</span> */}
          {/* <div className="hd-category">
             <span>Category</span>
          </div> */}
-         <CategoryDropdown />
 
          <div className="hd-search-bar">
             <span className="hd-search-icon">🔍</span>
@@ -49,6 +62,7 @@ export default function Header() {
                   />
                   {/* <span>MarketKoe</span> */}
                </Link>
+
                <Link to="/profile" className="hd-rm-profile">
                   <img
                      src="https://i.pinimg.com/736x/12/e7/66/12e766972089e8ad3771982884a996af.jpg"
@@ -56,6 +70,48 @@ export default function Header() {
                   />
                   <span>Yukihime</span>
                </Link>
+
+               {/* Profile Handling */}
+               {/* <div>
+                  {user ? (
+                     <div className="profile-dropdown">
+                        <button className="profile-btn">
+                           {user.profilePicture ? (
+                              <img
+                                 src={user.profilePicture}
+                                 alt="Profile"
+                                 className="profile-pic"
+                              />
+                           ) : (
+                              <div className="profile-icon">
+                                 {user.name.charAt(0).toUpperCase()}
+                              </div>
+                           )}
+                           <span>{user.name}</span>
+                        </button>
+
+                        <div className="dropdown-menu">
+                           <Link to="/profile" className="dropdown-item">
+                              My Profile
+                           </Link>
+                           <Link to="/settings" className="dropdown-item">
+                              Settings
+                           </Link>
+                           <button
+                              onClick={handleLogout}
+                              className="dropdown-item"
+                           >
+                              Logout
+                           </button>
+                        </div>
+                     </div>
+                  ) : (
+                     <Link to="/signup" className="signup-btn">
+                        <div className="profile-icon empty">👤</div>
+                        <span>Sign Up</span>
+                     </Link>
+                  )}
+               </div> */}
             </div>
          </div>
       </header>

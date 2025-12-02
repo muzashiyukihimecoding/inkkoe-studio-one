@@ -3,11 +3,5 @@ import Footer from "../components/common/Footer";
 import Building_Mode from "./BuildingMode";
 
 export default function Notif() {
-   return (
-      <>
-         <Header />
-         <Building_Mode />
-         <Footer />
-      </>
-   );
+   return <Building_Mode />;
 }

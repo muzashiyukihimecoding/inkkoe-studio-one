@@ -8,21 +8,17 @@ import ProductShowroom from "../components/ShowroomProducts";
 
 export default function Home() {
    return (
-      <>
-         <Header />
-         <div className="main">
-            <BannerSlider />
-            <KategoriPilihan />
+      <div className="main">
+         <BannerSlider />
+         <KategoriPilihan />
 
-            {/* cuma garis pembatas */}
-            <div className="divider">
-               <div className="inner-divider"></div>
-            </div>
-
-            {/* Showroom Produk POD */}
-            <ProductShowroom />
+         {/* cuma garis pembatas */}
+         <div className="divider">
+            <div className="inner-divider"></div>
          </div>
-         <Footer />
-      </>
+
+         {/* Showroom Produk POD */}
+         <ProductShowroom />
+      </div>
    );
 }

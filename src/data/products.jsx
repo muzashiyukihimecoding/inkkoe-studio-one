@@ -11,7 +11,7 @@ const products = [
       category: "t-shirt",
       image: "https://i.pinimg.com/736x/e0/ef/39/e0ef39d3aaab4ec48ff0f03a8bc195de.jpg",
       tags: ["Best Seller", "New"],
-      seller: "Badak Bercula",
+      seller: "Badak Bercula.mocks",
       get price() {
          return Math.round(this.originalPrice * (1 - this.discount / 100));
       },
@@ -28,7 +28,7 @@ const products = [
       category: "t-shirt",
       image: "https://i.pinimg.com/736x/e4/51/fc/e451fce1f82ded9baa00a265eabc19f5.jpg",
       tags: ["Popular"],
-      seller: "Badak Bercula",
+      seller: "Badak Bercula.mocks",
       get price() {
          return Math.round(this.originalPrice * (1 - this.discount / 100));
       },
@@ -59,7 +59,7 @@ const products = [
       rating: 4.2,
       reviews: 670,
       location: "Surabaya Gubeng",
-      category: "mugs"  ,
+      category: "mugs",
       image: "https://i.pinimg.com/736x/01/5f/a4/015fa43360dcf2a10814089231ae4a70.jpg",
       tags: ["Premium"],
       seller: "Coffee&Create Creative Indonesia",
@@ -79,7 +79,7 @@ const products = [
       category: "t-shirt",
       image: "https://i.pinimg.com/736x/6a/73/59/6a7359f03723294ffdf887723ea0227a.jpg",
       tags: ["Cheap"],
-      seller: "Kota Administrat Jakarta Uzu",
+      seller: "Badak Bercula.mocks",
       get price() {
          return Math.round(this.originalPrice * (1 - this.discount / 100));
       },
@@ -120,17 +120,17 @@ const products = [
    },
    {
       id: 8,
-      name: "ARCTIC MK 6 (ULTIMATE)",
+      name: "Digital Literature 60% Keyboard Pinky Sugar Keycaps",
       // price: 108000,
-      originalPrice: 135000,
-      discount: 20,
+      originalPrice: 123499,
+      discount: 18,
       rating: 4.7,
       reviews: 89,
-      location: "Surabaya",
+      location: "Purwokerto",
       category: "gaming",
-      image: "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=300&fit=crop",
-      tags: ["Premium"],
-      seller: "Gaming Corp",
+      image: "https://i.pinimg.com/736x/3e/76/07/3e760709fbe9076e9aee271b7426ec86.jpg",
+      tags: ["Premium", "Official Store"],
+      seller: "Digital Literature Official",
       get price() {
          return Math.round(this.originalPrice * (1 - this.discount / 100));
       },

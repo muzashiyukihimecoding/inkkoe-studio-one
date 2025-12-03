@@ -15,8 +15,8 @@ export default function BannerSlider() {
          img: "https://i.pinimg.com/736x/64/92/e9/6492e92ba27852433d6e00fd82c757ac.jpg",
       },
       {
-         id: 1,
-         img: "https://i.pinimg.com/736x/52/e1/05/52e105535528f7fd236ef1d221e1dae5.jpg",
+         id: 4,
+         img: "https://i.pinimg.com/736x/d1/55/97/d155970c45582d4ac0d9eb372a0765c4.jpg",
       },
    ];
 

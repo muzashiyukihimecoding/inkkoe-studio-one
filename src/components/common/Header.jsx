@@ -38,7 +38,7 @@ export default function Header() {
             </a>
          </div>
 
-         <CategoryDropdown />
+         {/* <CategoryDropdown /> */}
          {/* <span className="hd-category">Category</span> */}
          {/* <div className="hd-category">
             <span>Category</span>
